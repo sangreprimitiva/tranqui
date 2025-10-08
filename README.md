@@ -6,13 +6,13 @@ Unified wrapper (sync + async) that returns a typed **Result** with either the *
 ## Installation
 
 ```sh
-npm i tranqui
+npm i @sangreprimitiva/tranqui
 ```
 
 ## Usage
 
 ```ts
-import { tranqui } from 'tranqui';
+import { tranqui } from '@sangreprimitiva/tranqui';
 
 // Sync function
 function double(n: number) {
