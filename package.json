@@ -1,0 +1,62 @@
+{
+	"name": "tranqui",
+	"version": "1.0.0",
+	"description": "Run sync/async functions and get a typed Result: value() or error() for explicit error handling.",
+	"license": "MIT",
+	"author": "sangreprimitiva",
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"sideEffects": false,
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"clean": "rimraf dist",
+		"try": "tsx examples/try.ts",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"coverage": "vitest run --coverage",
+		"prepublishOnly": "npm run test:run && npm run build"
+	},
+	"devDependencies": {
+		"@types/node": "^24.7.0",
+		"@vitest/coverage-v8": "^3.2.4",
+		"rimraf": "^6.0.1",
+		"tsup": "^8.5.0",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3",
+		"vitest": "^3.2.4"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sangreprimitiva/tranqui.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sangreprimitiva/tranqui/issues"
+	},
+	"homepage": "https://github.com/sangreprimitiva/tranqui#readme",
+	"keywords": [
+		"result",
+		"error-handling",
+		"try-catch",
+		"typescript",
+		"async",
+		"sync"
+	]
+}
