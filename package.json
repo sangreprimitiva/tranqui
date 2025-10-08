@@ -1,6 +1,9 @@
 {
-	"name": "tranqui",
+	"name": "@sangreprimitiva/tranqui",
 	"version": "1.0.0",
+	"publishConfig": {
+		"access": "public"
+	},
 	"description": "Run sync/async functions and get a typed Result: value() or error() for explicit error handling.",
 	"license": "MIT",
 	"author": "sangreprimitiva",
